@@ -1,0 +1,29 @@
+/* Default: Light Mode */
+:root {
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --navbar-bg: rgba(255, 255, 255, 0.8);
+    --border-color: #e2e8f0;
+    --primary: #4361ee;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode override */
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --navbar-bg: rgba(30, 41, 59, 0.8);
+    --border-color: #334155;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+/* Apply to body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
